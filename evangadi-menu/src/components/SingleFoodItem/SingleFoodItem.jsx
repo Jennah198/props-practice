@@ -6,17 +6,17 @@ export default class SingleFoodItem extends Component {
     const { item } = this.props
 
     return (
-      <div className="single-food">
-        <div className="img">
+      <div className={style['single-food']}>
+        <div className={style['img']}>
           <img src={item.img} alt={item.title} />
         </div>
 
-        <div className="title-price">
+        <div className={style['title-price']}>
           <h3>{item.title}</h3>
           <p>${item.price.toFixed(2)}</p>
         </div>
 
-        <div className="food-desc">{item.desc}</div>
+        <div className={style['food-desc']}>{item.desc}</div>
       </div>
     )
   }
